@@ -1,6 +1,6 @@
 services:
   web:
-    build: ./app
+    build: ./App
     container_name: flask_mqtt_app
     restart: unless-stopped
     ports:
