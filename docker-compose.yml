@@ -6,7 +6,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - MONGO_URI=mongodb://mongo:27017/fve
+      - MONGO_URI=mongodb://root:example@mongo:27017/fve?authSource=admin
       - MQTT_BROKER=cassandra2.tul.cz
       - MQTT_PORT=1883
     depends_on:
