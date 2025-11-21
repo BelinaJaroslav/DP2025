@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 
 # --- Mongo Setup ---
-mongo_uri = os.environ.get("MONGO_URI", "mongodb://localhost:27017/fve")
+mongo_uri = os.environ.get("MONGO_URI", "mongodb://mongo:27017/fve")
 mongo_client = MongoClient(mongo_uri)
 db = mongo_client["fve"]
 collection = db["measurements"]
